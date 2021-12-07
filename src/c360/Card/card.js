@@ -190,4 +190,8 @@ NOTES:
   - unit test
   - chromatic
 
+6. Documentation
+  - API
+    - each API, type, default, options, descriptions
+  - design files
 */

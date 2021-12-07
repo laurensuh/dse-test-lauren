@@ -1,6 +1,5 @@
 import { fragmentFrom } from 'elix/src/core/htmlLiterals'
 import docs from './docs.mdx'
-import image from '../../assets/mountain.jpg'
 
 export default {
   title: 'C360 Components/Card',
