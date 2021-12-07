@@ -1,5 +1,6 @@
 import { fragmentFrom } from 'elix/src/core/htmlLiterals'
 import docs from './docs.mdx'
+import image from '../../assets/mountain.jpg'
 
 export default {
   title: 'C360 Components/Card',
@@ -32,6 +33,22 @@ export const RFC = () => {
 
 export const Base = () => {
   return fragmentFrom.html`
-    <c360-card />
+    <c360-card 
+      headline="Contact Us"
+      buttontext="Click Here"
+      text="Call us at 1-800-667-6389, click on chat in the lower right, or let us call you"
+    />
+  `
+}
+
+export const WithImage = (args) => {
+  return fragmentFrom.html`
+    <c360-card 
+      headline="Contact Us"
+      buttontext="Click Here"
+      text="Call us at 1-800-667-6389, click on chat in the lower right, or let us call you"
+      src="img"
+      imgalt="Mountain picture"
+    />
   `
 }

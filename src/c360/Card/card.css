@@ -1,3 +1,40 @@
 div {
-  border: 1px solid #333;
+  /* border: 1px solid #333; */
+  padding: var(--sds-g-spacing-medium) var(--sds-g-spacing-small);
+  background-color: var(--sds-g-color-neutral-base-3);
+}
+
+[part~='card-headline'] {
+  display: block;
+  padding-bottom: var(--sds-g-spacing-small);
+}
+
+[part~='card-img'] {
+  position: relative;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+}
+
+[part~='card-img']::before {
+  content: ' ';
+  position: absolute;
+  left: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: darkgray;
+}
+
+p {
+  margin: 0;
+  padding: var(--sds-g-spacing-small) 0 var(--sds-g-spacing-medium) 0;
+}
+
+[part~='card-button'] {
+  margin-bottom: var(--sds-g-spacing-medium);
+}
+
+.hidden {
+  display: none;
 }

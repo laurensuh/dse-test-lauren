@@ -35,3 +35,11 @@ export const Base = () => {
     <c360-card-group />
   `
 }
+
+export const WithTitle = () => {
+  return fragmentFrom.html`
+    <c360-card-group 
+      cardgroupheading="Want to learn more about Salesforce?"
+    />
+  `
+}

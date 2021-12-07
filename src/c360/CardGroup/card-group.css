@@ -1,3 +1,42 @@
-div {
+/* div {
   border: 1px solid #333;
+} */
+
+.card-group {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: var(--sds-g-spacing-small);
 }
+
+[part~='card-grp-headline'] {
+  display: block;
+  padding-bottom: var(--sds-g-spacing-large);
+}
+
+.hidden {
+  display: none;
+}
+
+/* Q/To Do: Can media query variables be saved in normal css? */
+
+/* Tablet */
+@media only screen and (min-width: 834px) {
+  .card-group {
+    grid-template-columns: repeat(2, 1fr); /* putting 2 just to show difference between tablet and desktop */
+    column-gap: var(--sds-g-spacing-small);
+  }  
+}
+
+
+/* Desktop- small */
+@media only screen and (min-width: 1024px) {
+  .card-group {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: var(--sds-g-spacing-small);
+  }  
+}
+
+/* Would normally set breakpoints to: 768px tablet, 1024px for desktop 
+But for now I'll follow sb viewport */
+
+/* Desktop- medium (starting from 1440px - If needed */

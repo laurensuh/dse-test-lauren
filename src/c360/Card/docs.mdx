@@ -1,5 +1,25 @@
 # Card
 
-Documentation can be added here in MDX format.
+Card component is a standlone component that is often used inside parent component card-group. It displays heading, paragraph, button and optional image. By default width of card is 100% width. Once placed in card group, each card will be set to proper width.
 
-More information about MDX can be found [on their website](https://mdxjs.com/).
+## APIs
+**`headline`: string**: Headline text to be added at top of card.
+
+**`buttontext`: string** Button text inside card component. Button has brand styling by default and cannot be changed. 
+
+**`text`: string** Main paragraph text to be added inside card component.
+
+**`src`: string** (optional) Image src to be added.
+
+Example usage:
+```
+<c360-card
+  headline="About us" 
+  buttontext="Click here"
+  text="This is a paragraph describing the card information. Recommendation length is 350 char."
+  src="../image.jpg"
+/>
+```
+## Design
+Please visit [figma link](http://google.com) for full design spec.
+
