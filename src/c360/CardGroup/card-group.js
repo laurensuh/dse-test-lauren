@@ -69,6 +69,7 @@ class C360CardGroup extends ReactiveElement {
           <div>
             <c360-card 
               src="src"
+              imgalt="mountain"
               headline="Card One" 
               text="Card one text" 
             />
@@ -77,6 +78,7 @@ class C360CardGroup extends ReactiveElement {
             <c360-card 
               headline="Card Two"  
               src="src"
+              imgalt="river"
               text="Card two text" 
             />
           </div>
@@ -84,6 +86,7 @@ class C360CardGroup extends ReactiveElement {
             <c360-card 
               headline="Card Three" 
               src="src"
+              imgalt="beach"
               text="Card three text" 
             />
           </div>
